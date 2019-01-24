@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="PersonTest" time="0.062" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="PersonTest" time="0.082" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="NL"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/thomas/Transfer-Solutions/Onderzoek CICD/JavaUnitTestDemo/target/surefire/surefirebooter12116424840623739075.jar /Users/thomas/Transfer-Solutions/Onderzoek CICD/JavaUnitTestDemo/target/surefire 2019-01-24T11-01-00_564-jvmRun1 surefire9310814953987563979tmp surefire_04894697630370767158tmp"/>
+    <property name="sun.java.command" value="/Users/thomas/Transfer-Solutions/Onderzoek CICD/JavaUnitTestDemo/target/surefire/surefirebooter3172217578288658256.jar /Users/thomas/Transfer-Solutions/Onderzoek CICD/JavaUnitTestDemo/target/surefire 2019-01-24T12-14-02_984-jvmRun1 surefire11254318424183241168tmp surefire_04842802794393110714tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/thomas/Transfer-Solutions/Onderzoek CICD/JavaUnitTestDemo/target/test-classes:/Users/thomas/Transfer-Solutions/Onderzoek CICD/JavaUnitTestDemo/target/classes:/Users/thomas/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/thomas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/thomas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0-M1/junit-jupiter-api-5.4.0-M1.jar:/Users/thomas/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/thomas/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/Users/thomas/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0-M1/junit-platform-commons-1.4.0-M1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/thomas/Transfer-Solutions/Onderzoek CICD/JavaUnitTestDemo/target/surefire/surefirebooter12116424840623739075.jar"/>
+    <property name="surefire.real.class.path" value="/Users/thomas/Transfer-Solutions/Onderzoek CICD/JavaUnitTestDemo/target/surefire/surefirebooter3172217578288658256.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.2+9-LTS"/>
     <property name="user.name" value="thomas"/>
@@ -58,9 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testGetAgeWithWithCurrentDateMinus3YearsPlus1DayCodeReturns2" classname="PersonTest" time="0.032"/>
-  <testcase name="testGetAgeWithWithCurrentDateMinus3YearsMinus1DayCodeReturns3" classname="PersonTest" time="0.001"/>
-  <testcase name="testSetPostalCodeWithInvalidPostalCodeReturnsFalse" classname="PersonTest" time="0.001"/>
-  <testcase name="testSetPostalCodeWithValidPostalCodeReturnsTrue" classname="PersonTest" time="0.001"/>
+  <testcase name="testGetAgeWithWithCurrentDateMinus3YearsPlus1DayCodeReturns2" classname="PersonTest" time="0.036"/>
+  <testcase name="testGetAgeWithWithCurrentDateMinus3YearsMinus1DayCodeReturns3" classname="PersonTest" time="0"/>
+  <testcase name="testSetPostalCodeWithInvalidPostalCodeReturnsFalse" classname="PersonTest" time="0.002"/>
+  <testcase name="testSetPostalCodeWithValidPostalCodeReturnsTrue" classname="PersonTest" time="0.002"/>
   <testcase name="testGetAgeWithWithCurrentDateMinus3CodeReturns3" classname="PersonTest" time="0.001"/>
 </testsuite>
