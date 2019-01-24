@@ -1,17 +1,13 @@
-import org.junit.jupiter.api.AfterEach;
+import junit.framework.TestCase;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import nl.avans.Person;
 
 import java.time.LocalDate;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class PersonTest {
+public class PersonTest extends TestCase {
 
     @Test
-    void testSetPostalCodeWithValidPostalCodeReturnsTrue() {
+    public void testSetPostalCodeWithValidPostalCodeReturnsTrue() {
         //Arange
         Person person = new Person();
         //Act
@@ -21,7 +17,7 @@ class PersonTest {
     }
 
     @Test
-    void testSetPostalCodeWithInvalidPostalCodeReturnsFalse() {
+    public void testSetPostalCodeWithInvalidPostalCodeReturnsFalse() {
         //Arange
         Person person = new Person();
         //Act
@@ -32,7 +28,7 @@ class PersonTest {
 
 
     @Test
-    void testGetAgeWithWithCurrentDateMinus3CodeReturns3() {
+    public void testGetAgeWithWithCurrentDateMinus3CodeReturns3() {
         //Arragne
         Person person = new Person();
         LocalDate dob = LocalDate.of(LocalDate.now().getYear()-3, LocalDate.now().getMonth(), LocalDate.now().getDayOfMonth());
@@ -46,7 +42,7 @@ class PersonTest {
 
     }
     @Test
-    void testGetAgeWithWithCurrentDateMinus3YearsMinus1DayCodeReturns3() {
+    public void testGetAgeWithWithCurrentDateMinus3YearsMinus1DayCodeReturns3() {
         //Arragne
         Person person = new Person();
         LocalDate dob = LocalDate.now().minusYears(3).minusDays(1);
@@ -59,7 +55,7 @@ class PersonTest {
 
     }
     @Test
-    void testGetAgeWithWithCurrentDateMinus3YearsPlus1DayCodeReturns2() {
+    public void testGetAgeWithWithCurrentDateMinus3YearsPlus1DayCodeReturns2() {
         //Arrange
         Person person = new Person();
         LocalDate dob = LocalDate.now().minusYears(3).plusDays(1);
@@ -73,7 +69,7 @@ class PersonTest {
     }
 
     @Test
-    void TestGetDaysUntilBirthdayWithDayIsBirthdayReturns0() {
+    public void TestGetDaysUntilBirthdayWithDayIsBirthdayReturns0() {
         //Arrange
         Person person = new Person();
         LocalDate dob = LocalDate.now();
@@ -87,7 +83,7 @@ class PersonTest {
     }
 
     @Test
-    void TestGetDaysUntilBirthdayWithDayIsBirthdayplus364Returns1() {
+    public void TestGetDaysUntilBirthdayWithDayIsBirthdayplus364Returns1() {
         //Arrange
         Person person = new Person();
         LocalDate dob = LocalDate.now().plusDays(364);
@@ -100,7 +96,7 @@ class PersonTest {
 
     }
     @Test
-    void TestGetDaysUntilBirthdayWithDayIsBirthdayMinus1Returns1() {
+    public void TestGetDaysUntilBirthdayWithDayIsBirthdayMinus1Returns1() {
         //Arrange
         Person person = new Person();
         LocalDate dob = LocalDate.now().minusDays(1);
